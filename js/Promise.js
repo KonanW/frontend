@@ -1,4 +1,26 @@
-// promise 
+// promise :异步编程的解决方案：一般都有三种状态：进行中，已完成 已失败
+
+//基本用法 ：
+
+let promise = new promise((resolve,reject) =>{
+    if(success) {
+        resolve(a);
+    }else {
+        reject(err);
+    }
+});
+
+//2
+
+function promise(){
+    return new Promise((resolve,reject)=>{
+        if(success) {
+            resolve(a);
+        }else {
+            reject(err);
+        }
+    })
+}
 
 class Promise {
     constructor(executor) {

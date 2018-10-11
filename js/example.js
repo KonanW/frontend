@@ -15,4 +15,13 @@ console.log(b.x) ; // {n:2}
 
 */
 
+/* 执行顺序 */
+
+for(var i =0;i<5;i++){
+    setTimeout(() => {
+        console.log(new Date,i);
+    },1000);
+}
+
+console.log(new Date , i);
 
